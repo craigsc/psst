@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:secret="http://schemas.android.com/apk/res-auto" >
+    <item android:id="@+id/action_write_post"
+        android:icon="@drawable/ic_action_edit"
+        secret:showAsAction="ifRoom"
+        android:title="@string/action_write_post" />
+    <item
+        android:id="@+id/action_find_friends"
+        secret:showAsAction="never"
+        android:title="@string/action_find_friends"/>
+    <item
+        android:id="@+id/action_log_out"
+        secret:showAsAction="never"
+        android:title="@string/action_log_out"/>
+
+</menu>

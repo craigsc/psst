@@ -1,0 +1,34 @@
+<resources xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="Theme.AppBaseTheme" parent="@style/Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+        <item name="android:actionMenuTextAppearance" tools:targetApi="11">
+            @style/MyActionBar.MenuTextStyle
+        </item>
+        <item name="actionMenuTextAppearance">
+            @style/MyActionBar.MenuTextStyle
+        </item>
+    </style>
+
+    <!-- Application theme. -->
+    <style name="Theme.AppTheme" parent="Theme.AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    <style name="MyActionBar.MenuTextStyle"
+        parent="android:style/TextAppearance.Holo.Widget.ActionBar.Menu">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textAllCaps" tools:targetApi="14">false</item>  
+        <item name="android:textStyle">normal</item> 
+        <item name="android:capitalize">words</item>
+    </style>
+
+</resources>

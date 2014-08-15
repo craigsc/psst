@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+    <com.craigsc.secret.NewPostEditText
+        android:id="@+id/post_text"
+        android:layout_width="fill_parent"
+        android:layout_height="325dp"
+        android:padding="15dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="@null"
+        android:textCursorDrawable="@null"
+        android:maxLength="300"
+        android:imeOptions="actionDone"
+        android:inputType="textCapSentences|textAutoCorrect"
+        android:hint="@string/post_placeholder"
+        android:cursorVisible="false"
+        android:textSize="22sp" />    
+        
+    <TextView
+        android:id="@+id/post_footer"
+        android:background="@null"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" 
+        android:text="@string/post_explanation"
+        android:gravity="center_horizontal|bottom"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp" />
+
+</LinearLayout>
